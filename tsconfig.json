@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "build",
+    "strict": true,
+    "moduleResolution": "node",
+    "types": ["@types/node", "@types/jest", "@nuxt/types"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": ["coverage", "tests"]
+}

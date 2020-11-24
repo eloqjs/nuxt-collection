@@ -1,0 +1,8 @@
+# Common
+node_modules
+build
+.nuxt
+coverage
+
+# Plugin
+lib/plugin.ts
