@@ -880,10 +880,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
-"@eloqjs/collection@^1.0.0-alpha.3":
-  version "1.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@eloqjs/collection/-/collection-1.0.0-alpha.3.tgz#4d773abbc07fb865b30155f92b9bd47daf604065"
-  integrity sha512-UubEA/FAl8aaRY/NOidQomrZgaN2F4CWLZRBASyyKuQEDPemp/XWqZYN46EDO5WOwcSRBxMVzQwOl4HLUXmGIQ==
+"@eloqjs/collection@^1.0.0-alpha.4":
+  version "1.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@eloqjs/collection/-/collection-1.0.0-alpha.4.tgz#ee89806ec99fcb5f65dd0005a7a1521ffb2079a7"
+  integrity sha512-X4T1b9ktTIFxqf8zP8MdKa72DwU20yC1OMojRAmGRbBPlyRIiVmpNE+HDJ+gj8F9Uv6LjXOe7Fb5S+AgAzY+WQ==
 
 "@eslint/eslintrc@^0.2.1":
   version "0.2.1"
