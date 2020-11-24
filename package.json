@@ -1,7 +1,7 @@
 {
   "name": "@eloqjs/nuxt-collection",
-  "version": "0.0.0",
-  "description": "Nuxt module for ELOQJS Collection.",
+  "version": "0.0.0-development",
+  "description": "The collection for your resources. Made specifically to work with arrays of objects from your API Responses.",
   "homepage": "https://collection.eloqjs.com",
   "repository": "eloqjs/nuxt-collection",
   "author": "João Pedro Antunes Silva",
@@ -13,7 +13,9 @@
     "array",
     "map",
     "filter",
-    "laravel"
+    "laravel",
+    "nuxt",
+    "module"
   ],
   "license": "MIT",
   "publishConfig": {
