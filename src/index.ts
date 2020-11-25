@@ -2,14 +2,16 @@ import { resolve } from 'path'
 import type { Module } from '@nuxt/types'
 
 import type { ModuleOptions } from '../types'
-import defaults from './defaults'
 
 const collectionModule: Module<ModuleOptions> = function (moduleOptions) {
   const options: ModuleOptions = {
-    ...defaults,
     ...this.options.collection,
     ...moduleOptions
   }
+
+  Object.keys(options).forEach(
+    (key) => options[key] === undefined && delete options[key]
+  )
 
   this.addPlugin({
     src: resolve(__dirname, '../templates/plugin.js'),
