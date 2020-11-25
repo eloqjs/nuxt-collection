@@ -6,7 +6,7 @@ const config: NuxtConfig = {
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
   modules: [collectionModule],
   collection: {
-    newQuery: ({ item }) => {
+    toQuery: ({ item }) => {
       return item
     }
   }
