@@ -39,14 +39,14 @@ jobs:
         with:
           github_token: ${{ github.token }}
           paths_ignore: '["**/*.md", ".gitpod.yml", ".editorconfig", ".gitignore", ".eslintignore", ".prettierignore"]'
-          do_not_skip: '["workflow_dispatch", "schedule", "push"]'
+          do_not_skip: '["workflow_dispatch", "schedule"]'
 
   test:
     name: Test
 
     needs: pre_job
 
-    if: ${{ needs.pre_job.outputs.should_skip != 'true' }}
+    if: needs.pre_job.outputs.should_skip != 'true' || (github.ref != 'refs/heads/dev' && github.head_ref != 'dev' && github.base_ref != 'dev')
 
     runs-on: ${{ matrix.os }}
 
