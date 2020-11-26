@@ -56,6 +56,15 @@ yarn add @eloqjs/nuxt-collection # or npm install @eloqjs/nuxt-collection
 2. Install dependencies using `yarn install` or `npm install`
 3. Start development server using `npm run dev`
 
+## Credits
+
+- 🔥 Inspiration from [Laravel Eloquent Collections](https://laravel.com/docs/eloquent-collections).
+
+- 💎 Based on [collect.js](https://github.com/ecrmnn/collect.js) by [Daniel Eckermann](https://github.com/ecrmnn).
+  Thank you so much for your amazing package!
+
+- ❤️ Whoever contributes to this project!
+
 ## License
 
 [MIT License](./LICENSE)
