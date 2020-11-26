@@ -52,7 +52,7 @@
     ]
   },
   "dependencies": {
-    "@eloqjs/collection": "^1.0.0-alpha.6"
+    "@eloqjs/collection": "alpha"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.7",
