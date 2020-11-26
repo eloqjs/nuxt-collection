@@ -15,6 +15,7 @@
 - [📖 &nbsp;Read the Documentation](https://collection.eloqjs.com)
 
 ## Features
+
 - Made specifically to work with arrays of objects
 - Handle objects wrapped in a `data` key
 - Extends the Array class
@@ -60,10 +61,8 @@ yarn add @eloqjs/nuxt-collection # or npm install @eloqjs/nuxt-collection
 ## Credits
 
 - 🔥 Inspiration from [Laravel Eloquent Collections](https://laravel.com/docs/eloquent-collections).
-
 - 💎 Based on [collect.js](https://github.com/ecrmnn/collect.js) by [Daniel Eckermann](https://github.com/ecrmnn).
   Thank you so much for your amazing package!
-
 - ❤️ Whoever contributes to this project!
 
 ## License
