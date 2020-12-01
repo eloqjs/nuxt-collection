@@ -15,7 +15,12 @@ describe('module', () => {
     testDir: __dirname,
     fixture: 'fixture',
     configFile: 'nuxt.config.ts',
-    server: true
+    server: true,
+    config: {
+      collection: {
+        primaryKey: () => 'slug'
+      }
+    }
   })
 
   it('should inject plugin', async () => {
@@ -30,6 +35,11 @@ describe('module', () => {
     })
 
     expect(nuxtContext.$collect).toBeDefined()
-    expect((nuxtContext.$collect as Collect)([])).toBeInstanceOf(Collection)
+
+    const collection = (nuxtContext.$collect as Collect)([])
+
+    expect(collection).toBeInstanceOf(Collection)
+    // @ts-ignore
+    expect(collection.primaryKey()).toBe('slug')
   })
 })
