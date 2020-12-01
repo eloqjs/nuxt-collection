@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 import { resolve } from 'path'
 import { Collection } from '@eloqjs/collection'
 import type { Module } from '@nuxt/types'
