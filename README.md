@@ -19,12 +19,12 @@
 ## Features
 
 - Made specifically to work with arrays of objects
-- Handle objects wrapped in a `data` key
+- JSON API specification support
 - Extends the Array class
 - Names and conventions that makes sense
 - Models support, fully compatible with [vue-api-query](https://github.com/robsontenorio/vue-api-query),
   [sarala](https://github.com/milroyfraser/sarala/) and [coloquent](https://github.com/DavidDuwaer/Coloquent)
-- Integrable `fresh` and `toQuery`
+- Integrable `primaryKey`, `fresh` and `toQuery`
 - TypeScript support
 
 [📖 &nbsp;Read the Documentation](https://collection.eloqjs.com)
@@ -54,11 +54,17 @@ yarn add @eloqjs/nuxt-collection # or npm install @eloqjs/nuxt-collection
 }
 ```
 
-## Development
+## Contributing
+
+You can contribute online with Gitpod:
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)][gitpod-href]
+
+Or locally:
 
 1. Clone this repository
-2. Install dependencies using `yarn install` or `npm install`
-3. Start development server using `npm run dev`
+2. Install dependencies using `yarn install`
+3. Start development server using `yarn dev`
 
 ## Credits
 
@@ -93,7 +99,7 @@ Copyright (c) João Pedro Antunes Silva
 [codecov-href]: https://codecov.io/gh/eloqjs/nuxt-collection
 
 [gitpod-src]: https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod&style=flat-square
-[gitpod-href]: https://gitpod.io/#https://github.com/eloqjs/collection
+[gitpod-href]: https://gitpod.io/#https://github.com/eloqjs/nuxt-collection
 
 [contributions-src]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square
 [contributions-href]: https://github.com/eloqjs/nuxt-collection/issues
