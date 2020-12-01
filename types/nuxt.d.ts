@@ -27,7 +27,7 @@ declare module 'vue/types/vue' {
 }
 
 declare module 'vuex/types/index' {
-  interface Store<S> {
+  interface Store {
     $collect<Item extends ItemData>(collection: Item[]): Collection<Item>
     $collect<Item extends ItemData>(...items: Item[]): Collection<Item>
   }

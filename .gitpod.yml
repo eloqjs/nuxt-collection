@@ -1,0 +1,14 @@
+tasks:
+  - init: yarn install
+    command: yarn dev
+  - command: echo split
+    openMode: split-right
+    name: split terminal
+
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - octref.vetur@0.23.0:TEzauMObB6f3i2JqlvrOpA==

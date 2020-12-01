@@ -6,6 +6,7 @@
   "repository": "eloqjs/nuxt-collection",
   "author": "João Pedro Antunes Silva",
   "keywords": [
+    "eloqjs",
     "collection",
     "collect",
     "eloquent",
@@ -39,12 +40,10 @@
     "clearMocks": true,
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.ts",
-      "!src/index.ts",
-      "!src/defaults.ts"
+      "src/**/*.ts"
     ],
     "coverageDirectory": "coverage",
-    "preset": "ts-jest",
+    "preset": "@nuxt/test-utils",
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "/node_modules/",
@@ -52,14 +51,15 @@
     ]
   },
   "dependencies": {
-    "@eloqjs/collection": "^1.0.0-alpha.6"
+    "@eloqjs/collection": "alpha"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.12.7",
+    "@nuxt/test-utils": "^0.0.1",
     "@nuxt/types": "^2.14.7",
     "@nuxt/typescript-build": "^2.0.3",
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/eslint-config-typescript": "^5.0.0",
-    "@nuxtjs/module-test-utils": "^1.6.3",
     "@nuxtjs/tailwindcss": "^3.2.0",
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.9",
@@ -72,6 +72,7 @@
     "eslint-plugin-simple-import-sort": "^6.0.1",
     "jest": "^26.6.3",
     "nuxt-edge": "^2.14.8-26768191.9ce75c5d",
+    "playwright": "^1.6.2",
     "prettier": "^2.2.0",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.2.4",

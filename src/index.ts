@@ -1,20 +1,19 @@
+// eslint-disable-next-line
 import { resolve } from 'path'
+import { Collection } from '@eloqjs/collection'
 import type { Module } from '@nuxt/types'
 
 import type { ModuleOptions } from '../types'
-import defaults from './defaults'
 
 const collectionModule: Module<ModuleOptions> = function (moduleOptions) {
-  const options: ModuleOptions = {
-    ...defaults,
+  Collection.config = {
     ...this.options.collection,
     ...moduleOptions
   }
 
   this.addPlugin({
     src: resolve(__dirname, '../templates/plugin.js'),
-    fileName: 'collection.js',
-    options
+    fileName: 'collection.js'
   })
 }
 
