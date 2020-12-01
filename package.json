@@ -39,9 +39,7 @@
     "clearMocks": true,
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.ts",
-      "!src/index.ts",
-      "!src/defaults.ts"
+      "src/**/*.ts"
     ],
     "coverageDirectory": "coverage",
     "preset": "@nuxt/test-utils",
