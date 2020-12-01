@@ -1,4 +1,5 @@
 import { resolve } from 'path'
+import { Collection } from '@eloqjs/collection'
 import type { Module } from '@nuxt/types'
 
 import type { ModuleOptions } from '../types'
@@ -13,10 +14,11 @@ const collectionModule: Module<ModuleOptions> = function (moduleOptions) {
     (key) => options[key] === undefined && delete options[key]
   )
 
+  Collection.config = options
+
   this.addPlugin({
     src: resolve(__dirname, '../templates/plugin.js'),
-    fileName: 'collection.js',
-    options
+    fileName: 'collection.js'
   })
 }
 
