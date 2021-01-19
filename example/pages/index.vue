@@ -20,7 +20,7 @@ export default Vue.extend({
       { id: 2, name: 'John Doe' },
       { id: 3, name: 'Alex Doe' },
       { id: 4, name: 'Mary Doe' }
-    ])
+    ]).primaryKey()
   }
 })
 </script>
